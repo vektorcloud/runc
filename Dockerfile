@@ -1,6 +1,6 @@
 FROM quay.io/vektorcloud/go:dep AS build
 
-ENV RUNC_VERSION v1.0.0-rc3 
+ENV RUNC_VERSION v1.0.0-rc4
 ENV TOOLS_VERSION v0.2.0
 
 RUN apk add --no-cache \

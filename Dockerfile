@@ -19,7 +19,7 @@ RUN apk add --no-cache \
   && make tool \
   && mv -v oci-image-tool /tmp/
 
-FROM quay.io/vektorcloud/base:3.7
+FROM quay.io/vektorcloud/base:3.9
 
 COPY --from=build /tmp/runc /usr/bin/
 COPY --from=build /tmp/oci-image-tool /usr/bin/
